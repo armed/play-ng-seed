@@ -1,10 +1,11 @@
 ## Directory Layout
 
+    app/views           --> layout files
+    
     public/app/         --> all of the files to be used in production
       css/              --> css files
         app.css         --> default stylesheet
       img/              --> image files
-      index.html        --> app layout file (the main html template file of the app)
       js/               --> javascript files
         controllers.js  --> application controllers
         filters.js      --> custom angular filters
