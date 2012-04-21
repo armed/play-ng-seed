@@ -1,0 +1,6 @@
+logs
+tmp
+precompiled
+.*
+!.gitignore
+./lib
