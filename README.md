@@ -1,7 +1,6 @@
-## Directory Layout ()
+## Directory Layout
 
-  public/               --> play framework public dir
-    app/                --> all of the files to be used in production
+    public/app/         --> all of the files to be used in production
       css/              --> css files
         app.css         --> default stylesheet
       img/              --> image files
@@ -21,30 +20,30 @@
         partial1.html
         partial2.html
 
-  conf/ng/jsTestDriver.conf    --> config file for JsTestDriver
+    conf/ng/jsTestDriver.conf    --> config file for JsTestDriver
 
-  logs/               --> JSTD and other logs go here (git-ignored)
+    logs/               --> JSTD and other logs go here (git-ignored)
 
-  scripts/            --> handy shell/js/ruby scripts
-    test-server.bat   --> starts JSTD server (windows)
-    test-server.sh    --> starts JSTD server (*nix)
-    test.bat          --> runs all unit tests (windows)
-    test.sh           --> runs all unit tests (*nix)
-    watchr.rb         --> config script for continuous testing with watchr
-    web-server.js     --> simple development webserver based on node.js
+    scripts/            --> handy shell/js/ruby scripts
+      test-server.bat   --> starts JSTD server (windows)
+      test-server.sh    --> starts JSTD server (*nix)
+      test.bat          --> runs all unit tests (windows)
+      test.sh           --> runs all unit tests (*nix)
+      watchr.rb         --> config script for continuous testing with watchr
+      web-server.js     --> simple development webserver based on node.js
 
-  test/ng             --> test source files and libraries
-    e2e/              -->
-      runner.html     --> end-to-end test runner (open in your browser to run)
-      scenarios.js    --> end-to-end specs
-    lib/
-      angular/                --> angular testing libraries
-        angular-mocks.js      --> mocks that replace certain angular services in tests
-        angular-scenario.js   --> angular's scenario (end-to-end) test runner library
-        version.txt           --> version file
-      jasmine/                --> Pivotal's Jasmine - an elegant BDD-style testing framework
-      jasmine-jstd-adapter/   --> bridge between JSTD and Jasmine
-      jstestdriver/           --> JSTD - JavaScript test runner
-    unit/                     --> unit level specs/tests
-      controllersSpec.js      --> specs for controllers
+    test/ng/            --> test source files and libraries
+      e2e/              -->
+        runner.html     --> end-to-end test runner (open in your browser to run)
+        scenarios.js    --> end-to-end specs
+      lib/
+        angular/                --> angular testing libraries
+          angular-mocks.js      --> mocks that replace certain angular services in tests
+          angular-scenario.js   --> angular's scenario (end-to-end) test runner library
+          version.txt           --> version file
+        jasmine/                --> Pivotal's Jasmine - an elegant BDD-style testing framework
+        jasmine-jstd-adapter/   --> bridge between JSTD and Jasmine
+        jstestdriver/           --> JSTD - JavaScript test runner
+      unit/                     --> unit level specs/tests
+        controllersSpec.js      --> specs for controllers
 
