@@ -26,9 +26,7 @@
     logs/               --> JSTD and other logs go here (git-ignored)
 
     scripts/            --> handy shell/js/ruby scripts
-      test-server.bat   --> starts JSTD server (windows)
       test-server.sh    --> starts JSTD server (*nix)
-      test.bat          --> runs all unit tests (windows)
       test.sh           --> runs all unit tests (*nix)
       watchr.rb         --> config script for continuous testing with watchr
       web-server.js     --> simple development webserver based on node.js
