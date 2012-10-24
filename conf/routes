@@ -9,7 +9,8 @@ GET     /                                       Application.index
 GET     /favicon.ico                            404
 
 # Map static resources from the /app/public folder to the /public path
-GET     /public/                                staticDir:public
+GET     /app/                                   staticDir:/public/app
+GET     /partials/                              staticDir:/public/app/partials
 
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}

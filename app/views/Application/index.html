@@ -1,19 +1,28 @@
-#{extends 'main.html' /}
-#{set title:'Home' /}
+<!DOCTYPE html>
 
-<ul class="menu">
-  <li><a href="#/view1">view1</a></li>
-  <li><a href="#/view2">view2</a></li>
-</ul>
+<html ng-app="myApp">
+    <head>
+        <title>My AngularJS App</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/app/css/app.css'}">
+    </head>
+    <body>
+        <ul class="menu">
+          <li><a href="#/view1">view1</a></li>
+          <li><a href="#/view2">view2</a></li>
+        </ul>
 
-<div ng-view></div>
+        <div ng-view></div>
 
-<div>Angular seed app: v<span app-version></span></div>
-#{set 'moreScripts'}
-<script src="@{'/public/app/lib/angular/angular.js'}"></script>
-<script src="@{'/public/app/js/app.js'}"></script>
-<script src="@{'/public/app/js/services.js'}"></script>
-<script src="@{'/public/app/js/controllers.js'}"></script>
-<script src="@{'/public/app/js/filters.js'}"></script>
-<script src="@{'/public/app/js/directives.js'}"></script>
-#{/set}
+        <div>Angular seed app: v<span app-version></span></div>
+        <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+        -->
+        <script src="@{'/public/app/lib/angular/angular.js'}"></script>
+        <script src="@{'/public/app/js/app.js'}"></script>
+        <script src="@{'/public/app/js/services.js'}"></script>
+        <script src="@{'/public/app/js/controllers.js'}"></script>
+        <script src="@{'/public/app/js/filters.js'}"></script>
+        <script src="@{'/public/app/js/directives.js'}"></script>
+    </body>
+</html>

@@ -1,35 +1,37 @@
 ## Directory Layout
 
     app/views           --> layout files
-    
+
     public/app/         --> all of the files to be used in production
       css/              --> css files
         app.css         --> default stylesheet
       img/              --> image files
       js/               --> javascript files
+        app.js          --> main application module
         controllers.js  --> application controllers
         filters.js      --> custom angular filters
         services.js     --> custom angular services
-        widgets.js      --> custom angular widgets
+        directives.js   --> custom angular directives
       lib/              --> angular and 3rd party javascript libraries
         angular/
           angular.js            --> the latest angular js
           angular.min.js        --> the latest minified angular js
-          angular-ie-compat.js  --> angular patch for IE 6&7 compatibility
+          angular-*.js          --> angular built-in modules
           version.txt           --> version number
       partials/         --> angular view partials (partial html templates)
         partial1.html
         partial2.html
 
-    conf/ng/jsTestDriver.conf    --> config file for JsTestDriver
+    conf/ng/testacular.conf.js        --> config file for Testacular unit tests
+    conf/ng/testacular-e2e.conf.js    --> config file for Testacular e2e tests
 
-    logs/               --> JSTD and other logs go here (git-ignored)
+    logs/               --> logs
 
-    scripts/            --> handy shell/js/ruby scripts
-      test-server.sh    --> starts JSTD server (*nix)
-      test.sh           --> runs all unit tests (*nix)
-      watchr.rb         --> config script for continuous testing with watchr
-      web-server.js     --> simple development webserver based on node.js
+    scripts/            --> handy shell scripts
+      e2e-test.bat      --> Testacular e2e test launcher (windows)
+      e2e-test.sh       --> Testacular e2e test launcher (*nix)
+      test.bat          --> Testacular unit test launcher (windows)
+      test.sh           --> Testacular unit test launcher (*nix)
 
     test/ng/            --> test source files and libraries
       e2e/              -->
@@ -40,9 +42,9 @@
           angular-mocks.js      --> mocks that replace certain angular services in tests
           angular-scenario.js   --> angular's scenario (end-to-end) test runner library
           version.txt           --> version file
-        jasmine/                --> Pivotal's Jasmine - an elegant BDD-style testing framework
-        jasmine-jstd-adapter/   --> bridge between JSTD and Jasmine
-        jstestdriver/           --> JSTD - JavaScript test runner
       unit/                     --> unit level specs/tests
         controllersSpec.js      --> specs for controllers
+        directivesSpec.js       --> specs for directives
+        filtersSpec.js          --> specs for filters
+        servicesSpec.js         --> specs for services
 
