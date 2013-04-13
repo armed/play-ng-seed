@@ -22,16 +22,16 @@
         partial1.html
         partial2.html
 
-    conf/ng/testacular.conf.js        --> config file for Testacular unit tests
-    conf/ng/testacular-e2e.conf.js    --> config file for Testacular e2e tests
+    conf/ng/karma.conf.js        --> config file for running unit tests with Karma
+    conf/ng/karma-e2e.conf.js    --> config file for running e2e tests with Karma
 
     logs/               --> logs
 
     scripts/            --> handy shell scripts
-      e2e-test.bat      --> Testacular e2e test launcher (windows)
-      e2e-test.sh       --> Testacular e2e test launcher (*nix)
-      test.bat          --> Testacular unit test launcher (windows)
-      test.sh           --> Testacular unit test launcher (*nix)
+      e2e-test.sh       --> runs end-to-end tests with Karma (*nix)
+      e2e-test.bat      --> runs end-to-end tests with Karma (windows)
+      test.bat          --> autotests unit tests with Karma (windows)
+      test.sh           --> autotests unit tests with Karma (*nix)
 
     test/ng/            --> test source files and libraries
       e2e/              -->
